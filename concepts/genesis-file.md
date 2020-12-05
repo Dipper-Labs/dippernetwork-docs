@@ -5,7 +5,7 @@ order: 4
 # Genesis 文件
 
 Genesis 文件 (~/.dipd/config/genesis.json) 是整个网络初始化的基础，其中包含有关创建Genesis区块的大部分信息（例如ChainID，共识参数，应用程序状态），初始化帐户余额，模块级别的参数，以及验证人信息。
-Genesis 文件用于设置Dipper Network网络的初始参数，在Genesis文件上建立健全的社会共识对于启动网络至关重要。
+Genesis 文件用于设置DipperNetwork网络的初始参数，在Genesis文件上建立健全的社会共识对于启动网络至关重要。
 
 账户余额数据是需要通过链下共识获得的，这个过程可能会依赖其他区块链的数据，或者一个代币产生事件。
 

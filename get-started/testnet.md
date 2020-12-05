@@ -6,7 +6,7 @@ order: 3
 
 ## 最新版本
 
-Dipper Network 主网的最新版本是[v4.0.1](https://github.com/Dipper-Labs/Dipper-Protocol/releases/tag/testnet-v4.0.1)
+DipperNetwork 主网的最新版本是[v4.0.1](https://github.com/Dipper-Labs/Dipper-Protocol/releases/tag/testnet-v4.0.1)
 
 ## 安装
 

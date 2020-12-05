@@ -54,9 +54,9 @@
 
 存储在帐户中的资金由私钥控制。此私钥是使用助记词通过单向函数生成的。如果丢失了私钥，则可以使用助记词找回它。但是，如果丢失了助记词，则将无法访问所有派生的私钥。同样，如果有人获得了您的助记词访问权限，他们就可以访问所有相关帐户。
 
-## Dipper Network 钱包
+## DipperNetwork 钱包
 
-Dipper Network钱包是基于[BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki)的分层确定性钱包。BIP44基于[BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)中描述的算法定义确定性钱包的逻辑层次结构，该算法允许处理多种代币，多个帐户，每个帐户的外部和内部链以及每个链的数百万个地址，例如比特币和以太坊。
+DipperNetwork钱包是基于[BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki)的分层确定性钱包。BIP44基于[BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)中描述的算法定义确定性钱包的逻辑层次结构，该算法允许处理多种代币，多个帐户，每个帐户的外部和内部链以及每个链的数百万个地址，例如比特币和以太坊。
 
 BIP44在BIP32路径中定义以下5个级别：
 
@@ -64,6 +64,6 @@ BIP44在BIP32路径中定义以下5个级别：
 m / purpose' / coin_type' / account' / change / address_index
 ```
 
-Dipper Network的coin_type在[SLIP44](https://github.com/satoshilabs/slips/blob/master/slip-0044.md)登记为925 `DIP`。
+DipperNetwork的coin_type在[SLIP44](https://github.com/satoshilabs/slips/blob/master/slip-0044.md)登记为925 `DIP`。
 
-所以Dipper Network密钥BIP44 path的前缀为`44'/925'/`，它的默认值是`44'/925'/0'/0/0`。
+所以DipperNetwork密钥BIP44 path的前缀为`44'/925'/`，它的默认值是`44'/925'/0'/0/0`。

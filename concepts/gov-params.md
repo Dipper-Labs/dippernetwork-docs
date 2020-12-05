@@ -1,6 +1,6 @@
 # 治理参数
 
-在Dipper Network中，存在一些特殊的参数，它们可通过链上治理被修改。持有DIP通证的用户都可以参与到参数修改的链上治理。
+在DipperNetwork中，存在一些特殊的参数，它们可通过链上治理被修改。持有DIP通证的用户都可以参与到参数修改的链上治理。
 如果社区对某些可修改的参数不满意，可以发起[参数修改提案](../features/governance.md#usage-scenario-of-parameter-change)，社区投票通过后即可在线自动完成修改。
 
 ## Auth 模块可治理参数

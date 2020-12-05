@@ -2,7 +2,7 @@
 
 ## 简介
 
-Dipper Network引入了由基金会控制且具有一定特殊权益的系统用户：profiler
+DipperNetwork引入了由基金会控制且具有一定特殊权益的系统用户：profiler
 
 * Profiler的权益
     1. 通过治理提交软件升级/停止提议。

@@ -4,11 +4,11 @@ order: 1
 
 # 简介
 
-dipd可执行程序是运行Dipper Network节点的入口，包括验证人节点和其他全节点都需要通过安装dipd，并启动守护进程来加入到Dipper Network网络。你也可以使用dipd在本地启动自己的测试网络。
+dipd可执行程序是运行DipperNetwork节点的入口，包括验证人节点和其他全节点都需要通过安装dipd，并启动守护进程来加入到DipperNetwork网络。你也可以使用dipd在本地启动自己的测试网络。
 
 ## 硬件要求
 
-建议在Linux服务器上运行Dipper Network节点。
+建议在Linux服务器上运行DipperNetwork节点。
 
 ### 最低硬件要求
 
@@ -51,4 +51,4 @@ config.toml是节点的非共识配置。不同的节点可以根据自己的情
 
 ### app.toml
 
-app.toml为Dipper Network提供了一些特殊的配置，例如`minimum-gas-prices`，`halt-height`。
+app.toml为DipperNetwork提供了一些特殊的配置，例如`minimum-gas-prices`，`halt-height`。

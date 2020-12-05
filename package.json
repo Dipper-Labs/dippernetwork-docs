@@ -1,13 +1,13 @@
 {
   "name": "docs",
   "version": "1.0.0",
-  "description": "Dipper Network Documents",
+  "description": "DipperNetwork Documents",
   "main": "index.html",
   "scripts": {
     "serve": "vuepress dev",
     "build": "vuepress build"
   },
-  "author": "Dipper Network Team",
+  "author": "DipperNetwork Team",
   "license": "ISC",
   "devDependencies": {
     "@vuepress/plugin-search": "^1.0.0-rc.1",

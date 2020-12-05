@@ -5,7 +5,7 @@ order: 2
 # 加入主网
 
 :::tip
-需要先 [安装 dipper network](install.md)
+需要先 [安装 DipperNetwork](install.md)
 :::
 
 ## 运行全节点

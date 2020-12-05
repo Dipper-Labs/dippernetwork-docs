@@ -39,7 +39,7 @@ https://chrome.google.com/webstore/search/metamask?hl=zh-CN
 - 点击'全部完成'后弹出你以太坊的账号详情，核对账号地址和账号余额等信息，确认无误后完成账号导入
 ![](../images/erc20_mapping/9.jpeg)
 
-### 3. 创建Dipper Network主网地址
+### 3. 创建DipperNetwork主网地址
 可以通过官方钱包完成也可以通过节点客户端dipcli完成
 
 #### 3.1 官方钱包下载地址(目前只支持安卓，IOS开发测试中): http://fir.highstreet.top/dipperwallet
@@ -47,7 +47,7 @@ https://chrome.google.com/webstore/search/metamask?hl=zh-CN
 
 #### 3.2 节点客户端dipcli创建账号
 - 如果没有安卓手机可以采用这种方式
-- 需要linux或者Mac osx操作系统，参考文档安装Dipper Network节点程序
+- 需要linux或者Mac osx操作系统，参考文档安装DipperNetwork节点程序
 ```
 https://docs.dippernetwork.com/software/how-to-install.html#%E5%AE%89%E8%A3%85%E4%B8%BB%E7%BD%91
 ```

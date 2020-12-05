@@ -41,12 +41,12 @@ module.exports = {
         "/en": {
             lang: "en-US",
             title: "dipvaloper1cul6enyty8v0nwlgq8khfa5jme5n23gph7cr3g Documents",
-            description: "Dipper Network Documents",
+            description: "DipperNetwork Documents",
         },
         "/": {
             lang: "简体中文",
-            title: "Dipper Network 文档",
-            description: "Dipper Network 文档",
+            title: "DipperNetwork 文档",
+            description: "DipperNetwork 文档",
         }
     },
     themeConfig: {
@@ -61,7 +61,7 @@ module.exports = {
                 label: '简体中文',
                 editLinkText: '帮助我们完善此文档',
                 nav: [{
-                    text: 'Dipper Network 官网',
+                    text: 'DipperNetwork 官网',
                     link: 'https://www.dippernetwork.com/'
                 }],
                 sidebar: sidebar("", [

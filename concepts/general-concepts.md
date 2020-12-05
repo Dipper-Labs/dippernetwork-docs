@@ -4,7 +4,7 @@ order: 1
 
 # 基础概念
 
-## Dipper Network 节点类型
+## DipperNetwork 节点类型
 
 ### 全节点
 
@@ -12,13 +12,13 @@ order: 1
 
 ### 验证人节点
 
-[Dipper Network Hub](../get-started/) 基于 [Cosmos SDK](https://cosmos.network/docs/intro/) 和 [Tendermint](https://tendermint.com/docs/introduction/what-is-tendermint.html) 实现，它依靠一组验证人节点来维护网络的安全。验证人节点的作用是运行一个全节点并通过广播投票（包含由其私钥签名的密文）来参与共识。验证人节点在区块链中提交新区块并获得收入以激励他们的工作。他们还必须对提案进行投票来参与链上治理。验证人节点的投票权重取决于他们的DIP总质押数量。
+[DipperNetwork Hub](../get-started/) 基于 [Cosmos SDK](https://cosmos.network/docs/intro/) 和 [Tendermint](https://tendermint.com/docs/introduction/what-is-tendermint.html) 实现，它依靠一组验证人节点来维护网络的安全。验证人节点的作用是运行一个全节点并通过广播投票（包含由其私钥签名的密文）来参与共识。验证人节点在区块链中提交新区块并获得收入以激励他们的工作。他们还必须对提案进行投票来参与链上治理。验证人节点的投票权重取决于他们的DIP总质押数量。
 
 ### 候选验证人节点
 
 只有DIP质押数量的前100名全节点可以成为验证人节点，其余的将成为候选验证人节点。排名情况将随着质押金额的变化而更新。
 
-## Dipper Network Hub 用户类型
+## DipperNetwork Hub 用户类型
 
 ### 验证人节点操作员
 
@@ -26,21 +26,21 @@ order: 1
 
 ### 委托人
 
-委托人是指持有DIP通证，但无法或者不想自己运行验证人节点的人。Dipper Network通证持有人可以委托他的DIP给某一个验证人，以获取对应的收益。委托人可以获取和验证人一样多的收益，只需要支付一定比例的佣金给验证人。
+委托人是指持有DIP通证，但无法或者不想自己运行验证人节点的人。DipperNetwork通证持有人可以委托他的DIP给某一个验证人，以获取对应的收益。委托人可以获取和验证人一样多的收益，只需要支付一定比例的佣金给验证人。
 
 ### Profiler
 
-Profiler是Dipper Network系统中的一类特殊账户，只有Profiler账户可以提交链上软件升级SoftwareUpgrade提议。
+Profiler是DipperNetwork系统中的一类特殊账户，只有Profiler账户可以提交链上软件升级SoftwareUpgrade提议。
 
-## Dipper Network 通证
+## DipperNetwork 通证
 
-Dipper Network枢纽有自己的原生通证，称为 DIP，在网络中有三个作用：
+DipperNetwork枢纽有自己的原生通证，称为 DIP，在网络中有三个作用：
 
 - **抵押：** 与Cosmos Hub中的ATOM通证类似，DIP通证将用作抵押通证以保护PoS区块链的安全运行。
-- **交易手续费：** DIP通证也将用于支付Dipper Network网络中所有交易的费用。
-- **服务费：** Dipper Network网络中的服务提供者需要以DIP通证为单位收取服务费。
+- **交易手续费：** DIP通证也将用于支付DipperNetwork网络中所有交易的费用。
+- **服务费：** DipperNetwork网络中的服务提供者需要以DIP通证为单位收取服务费。
 
-Dipper Network网络最终将支持来自Cosmos网络的所有列入白名单的费用通证，它们可用于支付交易费用和服务费用。
+DipperNetwork网络最终将支持来自Cosmos网络的所有列入白名单的费用通证，它们可用于支付交易费用和服务费用。
 
 ## Staking 收益
 
@@ -48,17 +48,17 @@ Dipper Network网络最终将支持来自Cosmos网络的所有列入白名单的
 
 - **通胀**
 
-  Dipper Network Hub是基于Tendermint的PoS网络，验证人在网络共识中的投票权取决于验证人（包括受委托）抵押通证（DIP）的数量。网络中抵押的通证数量越多，攻击网络所需的成本也越大，网络也越安全。
+  DipperNetwork Hub是基于Tendermint的PoS网络，验证人在网络共识中的投票权取决于验证人（包括受委托）抵押通证（DIP）的数量。网络中抵押的通证数量越多，攻击网络所需的成本也越大，网络也越安全。
 
-  为了维护验证人及其委托人抵押通证的价值，Dipper Network Hub设定通胀增发机制，用于激励验证人及所有DIP通证持有人将通证抵押，以获取通胀奖励，通胀奖励将会在[每个区块发放](../features/mint.md)。
+  为了维护验证人及其委托人抵押通证的价值，DipperNetwork Hub设定通胀增发机制，用于激励验证人及所有DIP通证持有人将通证抵押，以获取通胀奖励，通胀奖励将会在[每个区块发放](../features/mint.md)。
 
 - **出块奖励**
 
-  在Dipper Network网络中，所有验证节点将轮流出块，出块的概率和该验证人抵押（包括受委托）DIP的数量成正比。作为出块人，验证人将获得额外的出块奖励。
+  在DipperNetwork网络中，所有验证节点将轮流出块，出块的概率和该验证人抵押（包括受委托）DIP的数量成正比。作为出块人，验证人将获得额外的出块奖励。
 
 - **手续费**
 
-  在Dipper Network网络中的各种交易都需要支付一定的[手续费](fee.md)。手续费的多少取决于每种交易的[手续费上限（fee）](fee.md#fee)和[交易消耗资源（Gas）](fee.md#gas)。Dipper Network Hub 在系统中设定了Gas的最低单位价格（即 min-gas-price）。
+  在DipperNetwork网络中的各种交易都需要支付一定的[手续费](fee.md)。手续费的多少取决于每种交易的[手续费上限（fee）](fee.md#fee)和[交易消耗资源（Gas）](fee.md#gas)。DipperNetwork Hub 在系统中设定了Gas的最低单位价格（即 min-gas-price）。
   
   手续费目前只能使用DIP进行支付，以后可能会通过链上治理的方式维护一个手续费白名单，任何白名单内的通证都可以用于支付手续费。
 

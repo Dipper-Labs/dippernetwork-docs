@@ -129,7 +129,7 @@ dipcli tx sign unsigned.json --from=<key-name> > signed.tx
 
 签名之后，`signed.json`中的`signature`字段将不再为空。
 
-现在准备[广播这个已签名交易](#dipcli-tx-broadcast)到Dipper Network。
+现在准备[广播这个已签名交易](#dipcli-tx-broadcast)到DipperNetwork。
 
 ## dipcli tx broadcast
 

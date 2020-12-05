@@ -5,12 +5,12 @@ order: 2
 # 验证人问答
 
 :::tip
-Dipper Network 基础概念请参考 [基础概念](general-concepts.md)
+DipperNetwork 基础概念请参考 [基础概念](general-concepts.md)
 :::
 
 ## 常见问题
 
-### 如何成为 Dipper Network Hub 验证人
+### 如何成为 DipperNetwork Hub 验证人
 
 参考 [加入主网](../get-started/mainnet.md)
 
@@ -20,7 +20,7 @@ Dipper Network 基础概念请参考 [基础概念](general-concepts.md)
 想要获取更多的委托，您可以：
 
 - 进行安全审计，并公开审计结果
-- 开源一些 Dipper Network Hub 相关的开发工具和工作流程
+- 开源一些 DipperNetwork Hub 相关的开发工具和工作流程
 - 建立自己的网站，以建立良好的品牌形象
 :::
 
@@ -38,7 +38,7 @@ Dipper Network 基础概念请参考 [基础概念](general-concepts.md)
   - 验证人抵押的DIP数量（包括受委托）脱离了前100名，因此而成为候选人。可以通过抵押或委托更多的DIP使自己进入前100名，他将即时重新获得验证人身份。
 - `unbonded`：验证人不在活跃验证人集合中，因此不能参与共识。此类验证人不会受到惩罚，也不会获得任何奖励。但仍然可以接受委托。
 
-### Dipper Network Hub 有哪些不同类型的密钥
+### DipperNetwork Hub 有哪些不同类型的密钥
 
 简而言之，有两种类型的密钥：
 
@@ -123,7 +123,7 @@ Dipper Network 基础概念请参考 [基础概念](general-concepts.md)
 
 ### 什么是验证人佣金
 
-验证人收益池中的收益会在验证人及其委托人之间分配，验证人可以对委托人获取的收益收取一定比例的佣金。每个验证人可以自由设置其初始佣金，每日修改佣金幅度上限和佣金比例上限。Dipper Network Hub强制每个验证人设置该参数，创建验证人后，只有佣金比例可以更改。
+验证人收益池中的收益会在验证人及其委托人之间分配，验证人可以对委托人获取的收益收取一定比例的佣金。每个验证人可以自由设置其初始佣金，每日修改佣金幅度上限和佣金比例上限。DipperNetwork Hub强制每个验证人设置该参数，创建验证人后，只有佣金比例可以更改。
 
 ### 收益计算公式是什么
 
@@ -194,7 +194,7 @@ Linux可以打开（每个进程）的默认文件数是 `1024`，而 `DIP` 进�
     ```toml
     # /etc/systemd/system/dipd.service
     [Unit]
-    Description=Dipper Network Hub Node
+    Description=DipperNetwork Hub Node
     After=network.target
 
     [Service]
