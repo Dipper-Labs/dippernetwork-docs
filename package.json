@@ -2,7 +2,7 @@
   "name": "docs",
   "version": "1.0.0",
   "description": "DipperNetwork Documents",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "serve": "vuepress dev",
     "build": "vuepress build"
