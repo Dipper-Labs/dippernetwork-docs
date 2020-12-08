@@ -66,10 +66,13 @@ module.exports = {
                 }],
                 sidebar: sidebar("", [
                     ["快速开始", "/get-started"],
+                    ["ERC20主网映射", "/mapping"],
                     ["概念", "/concepts"],
                     ["功能模块", "/features"],
                     ["守护进程", "/daemon"],
                     ["命令行客户端", "/cli-client"],
+                    ["API服务", "/api"],
+                    ["虚拟机", "/vm"],
                     ["高级教程", "/advanced"],
                 ])
             }

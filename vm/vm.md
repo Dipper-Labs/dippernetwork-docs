@@ -1,3 +1,7 @@
+---
+order: 1
+---
+
 # 智能合约教程
 
 本教程包含智能合约相关的操作，需要你先在本地跑一个测试网节点或者私链。
@@ -276,4 +280,4 @@ dipcli query vm call $(dipcli keys show -a alice) dip1vp0pzeyst7zjkck5qk0kvplu3s
 
 智能合约相关的API，主要包括查询合约代码、预估交易gas和调用合约的方法。
 
-参考[这里](./api.md#合约相关api)
+参考[这里](../api/api.md#合约相关api)

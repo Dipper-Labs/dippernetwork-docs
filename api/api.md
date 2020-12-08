@@ -1,3 +1,6 @@
+---
+order: 1
+---
 
 # REST API
 
@@ -26,11 +29,11 @@ response：
     "protocol_version": {
       "p2p": "7",
       "block": "10",
-      "app": "0"
+      "app": "1"
     },
-    "id": "fe599889a0bba312173cdc6e61cc160b15b19700",
+    "id": "1952f8fd932b503ca4fcea26b22feb0c23e05ad7",
     "listen_addr": "tcp://0.0.0.0:26656",
-    "network": "dip-testnet",
+    "network": "dipperhub",
     "version": "0.32.13",
     "channels": "4020212223303800",
     "moniker": "sun",
@@ -43,11 +46,11 @@ response：
     "name": "dip",
     "server_name": "dipd",
     "client_name": "dipcli",
-    "version": "testnet-v4.0.1-8-g1b877b9",
-    "app_version": "0",
-    "commit": "1b877b9df930926e756e3a3f026e9b69bd8db0ce",
-    "build_tags": "netgo",
-    "go": "go version go1.14.2 darwin/amd64"
+    "version": "mainnet-v1.0.0-12-g367d043",
+    "app_version": "1",
+    "commit": "367d0432ad45554ad00f6fec9b47831b0492f913",
+    "build_tags": "netgo,",
+    "go": "go version go1.15.5 darwin/amd64"
   }
 }
 ```
@@ -61,12 +64,12 @@ curl http://127.0.0.1:1317/syncing
 ```
 
 response:
-
 ```json
 {
-  "syncing": false   // true表示节点正在追赶最新区块，false表示节点已经处于最新区块状态
+  "syncing": false   
 }
 ```
+true表示节点正在追赶最新区块，false表示节点已经处于最新区块状态
 
 ### 获取最新区块
 
@@ -82,10 +85,10 @@ response:
 {
   "block_meta": {
     "block_id": {
-      "hash": "C9F42D9F53205D46D0F6C0C089368DF48194CC0B5C52CBD2628BACBCEB9D07F4",
+      "hash": "A04233458E96AAFBD9C6D1618062DE4F1260A63973D85CA409173CFD7D47D0F3",
       "parts": {
         "total": "1",
-        "hash": "74585761EA406DCAD58410FEA7ED4992595F4C67EFB783596B3C54577AC3FF52"
+        "hash": "D3F0C6D6DCEC02511396AE9F486DBFCCE0309B6846F4C5FE61B03FC11BC24189"
       }
     },
     "header": {
@@ -93,27 +96,27 @@ response:
         "block": "10",
         "app": "0"
       },
-      "chain_id": "dip-testnet",
-      "height": "408710",
-      "time": "2020-10-12T06:39:23.317752452Z",
+      "chain_id": "dipperhub",
+      "height": "470630",
+      "time": "2020-12-08T02:47:54.11429947Z",
       "num_txs": "0",
-      "total_txs": "25",
+      "total_txs": "379",
       "last_block_id": {
-        "hash": "C299E482AE8ADAC6856D69EB4CD0D634592DBC5CBC216F8F7027702F3382F4D1",
+        "hash": "2F14CEA7BB71EB59E50D2EF89AC9D11E105C86EEBD8A5B07F30B56B81D04FFAD",
         "parts": {
           "total": "1",
-          "hash": "C424BB45293D7962C07BB7CA962127C4BB302C880A3ACBD309CD8EECB25178FD"
+          "hash": "B677DACF5D95BBF4FE5ACFB185DEB0EE417408446B22CC79B825222122541B67"
         }
       },
-      "last_commit_hash": "965FA634A4983037635875D765BBD2A73F3E5025883E88F09F72C9C48DF55BA4",
+      "last_commit_hash": "04B0B86E040AC348CFBB944A64460182F9BBCC3BA6DF539F73A7950582672951",
       "data_hash": "",
-      "validators_hash": "6DEA966562F2F2D001110233E39AF8CDD28F2EE245E0DE4D958C2EE7BBEA718E",
-      "next_validators_hash": "6DEA966562F2F2D001110233E39AF8CDD28F2EE245E0DE4D958C2EE7BBEA718E",
-      "consensus_hash": "048091BC7DDC283F77BFBF91D73C44DA58C3DF8A9CBC867405D8B7F3DAADA22F",
-      "app_hash": "29628A861F889E1D55BD6A10F0B6883393215C4028BAC85AC4DD89D82091FE50",
+      "validators_hash": "C93A326F6716F48DD9A6012055730D93D9170E0BF65A6657B949FD3B18D84285",
+      "next_validators_hash": "C93A326F6716F48DD9A6012055730D93D9170E0BF65A6657B949FD3B18D84285",
+      "consensus_hash": "B022130E7DA2B61ED09FCCCD08429870EEE0D330B646B0B9D065E255347FE1C3",
+      "app_hash": "8EFDBE35F8899660C55E0C09212ACDD493B29AE9A7A149F0CA3C3818A59E4D36",
       "last_results_hash": "",
       "evidence_hash": "",
-      "proposer_address": "20F1E1742088735C093FDC79B8AABB2007F0B947"
+      "proposer_address": "F21DB1549416602F67E9A3E5D39EF7226F03FDC5"
     }
   },
   "block": {
@@ -122,27 +125,27 @@ response:
         "block": "10",
         "app": "0"
       },
-      "chain_id": "dip-testnet",
-      "height": "408710",
-      "time": "2020-10-12T06:39:23.317752452Z",
+      "chain_id": "dipperhub",
+      "height": "470630",
+      "time": "2020-12-08T02:47:54.11429947Z",
       "num_txs": "0",
-      "total_txs": "25",
+      "total_txs": "379",
       "last_block_id": {
-        "hash": "C299E482AE8ADAC6856D69EB4CD0D634592DBC5CBC216F8F7027702F3382F4D1",
+        "hash": "2F14CEA7BB71EB59E50D2EF89AC9D11E105C86EEBD8A5B07F30B56B81D04FFAD",
         "parts": {
           "total": "1",
-          "hash": "C424BB45293D7962C07BB7CA962127C4BB302C880A3ACBD309CD8EECB25178FD"
+          "hash": "B677DACF5D95BBF4FE5ACFB185DEB0EE417408446B22CC79B825222122541B67"
         }
       },
-      "last_commit_hash": "965FA634A4983037635875D765BBD2A73F3E5025883E88F09F72C9C48DF55BA4",
+      "last_commit_hash": "04B0B86E040AC348CFBB944A64460182F9BBCC3BA6DF539F73A7950582672951",
       "data_hash": "",
-      "validators_hash": "6DEA966562F2F2D001110233E39AF8CDD28F2EE245E0DE4D958C2EE7BBEA718E",
-      "next_validators_hash": "6DEA966562F2F2D001110233E39AF8CDD28F2EE245E0DE4D958C2EE7BBEA718E",
-      "consensus_hash": "048091BC7DDC283F77BFBF91D73C44DA58C3DF8A9CBC867405D8B7F3DAADA22F",
-      "app_hash": "29628A861F889E1D55BD6A10F0B6883393215C4028BAC85AC4DD89D82091FE50",
+      "validators_hash": "C93A326F6716F48DD9A6012055730D93D9170E0BF65A6657B949FD3B18D84285",
+      "next_validators_hash": "C93A326F6716F48DD9A6012055730D93D9170E0BF65A6657B949FD3B18D84285",
+      "consensus_hash": "B022130E7DA2B61ED09FCCCD08429870EEE0D330B646B0B9D065E255347FE1C3",
+      "app_hash": "8EFDBE35F8899660C55E0C09212ACDD493B29AE9A7A149F0CA3C3818A59E4D36",
       "last_results_hash": "",
       "evidence_hash": "",
-      "proposer_address": "20F1E1742088735C093FDC79B8AABB2007F0B947"
+      "proposer_address": "F21DB1549416602F67E9A3E5D39EF7226F03FDC5"
     },
     "data": {
       "txs": null
@@ -152,44 +155,108 @@ response:
     },
     "last_commit": {
       "block_id": {
-        "hash": "C299E482AE8ADAC6856D69EB4CD0D634592DBC5CBC216F8F7027702F3382F4D1",
+        "hash": "2F14CEA7BB71EB59E50D2EF89AC9D11E105C86EEBD8A5B07F30B56B81D04FFAD",
         "parts": {
           "total": "1",
-          "hash": "C424BB45293D7962C07BB7CA962127C4BB302C880A3ACBD309CD8EECB25178FD"
+          "hash": "B677DACF5D95BBF4FE5ACFB185DEB0EE417408446B22CC79B825222122541B67"
         }
       },
       "precommits": [
         {
           "type": 2,
-          "height": "408709",
+          "height": "470629",
           "round": "0",
           "block_id": {
-            "hash": "C299E482AE8ADAC6856D69EB4CD0D634592DBC5CBC216F8F7027702F3382F4D1",
+            "hash": "2F14CEA7BB71EB59E50D2EF89AC9D11E105C86EEBD8A5B07F30B56B81D04FFAD",
             "parts": {
               "total": "1",
-              "hash": "C424BB45293D7962C07BB7CA962127C4BB302C880A3ACBD309CD8EECB25178FD"
+              "hash": "B677DACF5D95BBF4FE5ACFB185DEB0EE417408446B22CC79B825222122541B67"
             }
           },
-          "timestamp": "2020-10-12T06:39:23.317752452Z",
-          "validator_address": "20F1E1742088735C093FDC79B8AABB2007F0B947",
+          "timestamp": "2020-12-08T02:47:54.118447822Z",
+          "validator_address": "9A91E6F9F030FAE8A658604319CD98A145567353",
           "validator_index": "0",
-          "signature": "LEukHzK8YpEupVm2KqyMCf5P9PpGd/sGSk3z1uvVMINSJdPibx/1vP2eA7mNDiAAn+G+f5tJ6VCh3nF+6hJTDQ=="
+          "signature": "k1K1+lxDwTiaf3uw/2t5JSnR3MYU3nnCc6loOc2UZ5o2sU9BdqnVdFp3atzVEvAxxvbaB6JSafgdOL43e0Z8Dw=="
         },
         {
           "type": 2,
-          "height": "408709",
+          "height": "470629",
           "round": "0",
           "block_id": {
-            "hash": "",
+            "hash": "2F14CEA7BB71EB59E50D2EF89AC9D11E105C86EEBD8A5B07F30B56B81D04FFAD",
             "parts": {
-              "total": "0",
-              "hash": ""
+              "total": "1",
+              "hash": "B677DACF5D95BBF4FE5ACFB185DEB0EE417408446B22CC79B825222122541B67"
             }
           },
-          "timestamp": "2020-10-12T06:39:23.419121418Z",
-          "validator_address": "64BD1B7E829884A369F55AA927BEB6E29C554C92",
+          "timestamp": "2020-12-08T02:47:54.168519612Z",
+          "validator_address": "B8BFCBDDF796B6C3CE3175561E04F2DAAED8857A",
           "validator_index": "1",
-          "signature": "q5Nc3Esxg9iGeUMepM84AvLHjNq6Sjyff7a0+mmMjLi0UHsiDcfIahjhNPRPZ1QA4a6qmJMjo3GHwQ988JjpAw=="
+          "signature": "UyaoAmolIGTbSbWmLr+uJ+5t4oFVnvC+Hcjtfc35QmHEJW3dT0I1TSiMnJtxiX0PQWNe0zBrGitzjhaQ9y4MDw=="
+        },
+        {
+          "type": 2,
+          "height": "470629",
+          "round": "0",
+          "block_id": {
+            "hash": "2F14CEA7BB71EB59E50D2EF89AC9D11E105C86EEBD8A5B07F30B56B81D04FFAD",
+            "parts": {
+              "total": "1",
+              "hash": "B677DACF5D95BBF4FE5ACFB185DEB0EE417408446B22CC79B825222122541B67"
+            }
+          },
+          "timestamp": "2020-12-08T02:47:54.11515602Z",
+          "validator_address": "BFFF70834E9375E385393027B183201F681E2F36",
+          "validator_index": "2",
+          "signature": "YA4zjiMYLSxO4/YcG4ao7gOU4gg7kkcNwzwplHiooB+tc3GUgCbX2z9JDh60oEviTBHDQxpzU+3LBQFvCeLCAQ=="
+        },
+        {
+          "type": 2,
+          "height": "470629",
+          "round": "0",
+          "block_id": {
+            "hash": "2F14CEA7BB71EB59E50D2EF89AC9D11E105C86EEBD8A5B07F30B56B81D04FFAD",
+            "parts": {
+              "total": "1",
+              "hash": "B677DACF5D95BBF4FE5ACFB185DEB0EE417408446B22CC79B825222122541B67"
+            }
+          },
+          "timestamp": "2020-12-08T02:47:54.11429947Z",
+          "validator_address": "CEC23C1B79561370D996DA293AD7E7D0767A89C9",
+          "validator_index": "3",
+          "signature": "gRmSI6+aX0YeK+lG71FgyGewDgbIhz5x77yJ+AjUI4zZ+4H1Kof3u0lyFrF7+0Yw7LFLdUxBwVFEPtWorY+MCg=="
+        },
+        {
+          "type": 2,
+          "height": "470629",
+          "round": "0",
+          "block_id": {
+            "hash": "2F14CEA7BB71EB59E50D2EF89AC9D11E105C86EEBD8A5B07F30B56B81D04FFAD",
+            "parts": {
+              "total": "1",
+              "hash": "B677DACF5D95BBF4FE5ACFB185DEB0EE417408446B22CC79B825222122541B67"
+            }
+          },
+          "timestamp": "2020-12-08T02:47:54.113455638Z",
+          "validator_address": "D7749EB8D1D57B17B032088CA3A02A1FB9EF6711",
+          "validator_index": "4",
+          "signature": "tzed4w18CkjAd71Sh5unmnm6sxJqv+S8O+OZeqZLzZAkaPNa/vxmMrtp969YKNOmACD+G5T6JD+DO873vY21BA=="
+        },
+        {
+          "type": 2,
+          "height": "470629",
+          "round": "0",
+          "block_id": {
+            "hash": "2F14CEA7BB71EB59E50D2EF89AC9D11E105C86EEBD8A5B07F30B56B81D04FFAD",
+            "parts": {
+              "total": "1",
+              "hash": "B677DACF5D95BBF4FE5ACFB185DEB0EE417408446B22CC79B825222122541B67"
+            }
+          },
+          "timestamp": "2020-12-08T02:47:54.108694708Z",
+          "validator_address": "F21DB1549416602F67E9A3E5D39EF7226F03FDC5",
+          "validator_index": "5",
+          "signature": "WvLWEMO62i2ss66yKNgmzk/smAf1hBSLmaHI/+tHmcHdvDsqHOMp5EBNjOrUZucjpEFPtn/EvodheATNeJuvBQ=="
         }
       ]
     }
@@ -229,23 +296,23 @@ response:
 
 ```json
 {
-  "height": "408729",
+  "height": "470647",
   "result": {
     "type": "dip/Account",
     "value": {
-      "address": "dip1dcu73lw9uqkygpde4z4z22f079skta49vxs2r0",
+      "address": "dip1cul6enyty8v0nwlgq8khfa5jme5n23gp4jsx4z",
       "coins": [
         {
           "denom": "pdip",
-          "amount": "5000399999838731000"
+          "amount": "14422099336638"
         }
       ],
       "public_key": {
         "type": "tendermint/PubKeySecp256k1",
-        "value": "A30tYxLMk3t/yKzGaTiPaNGvSnJ0YsXoGZWrQYPdS4+e"
+        "value": "Apao2u0qDhfjjNwuCW4t50KyEcp4n8o88RlNIFhZc+lK"
       },
-      "account_number": "11",
-      "sequence": "1",
+      "account_number": "19",
+      "sequence": "11",
       "code_hash": ""
     }
   }
@@ -269,11 +336,11 @@ response:
 
 ```json
 {
-  "height": "408743",
+  "height": "470652",
   "result": [
     {
-      "denom": "pdip", //资产名字
-      "amount": "5000399999838731000" //资产数量 1DIP=10^12pdip
+      "denom": "pdip",
+      "amount": "14422099336638"
     }
   ]
 }
@@ -326,11 +393,11 @@ response:
 
 ```json
 {
-  "height": "408770",
+  "height": "470664",
   "result": [
     {
       "denom": "pdip",
-      "amount": "1002707815027000890769"
+      "amount": "652048451228814232832"
     }
   ]
 }
@@ -539,8 +606,8 @@ response:
 
 ```json
 {
-  "height": "408944",
-  "result": "0.043538317953224679" //通胀率4.35%
+  "height": "470678",
+  "result": "0.044383296974657587"
 }
 ```
 
@@ -554,8 +621,8 @@ response:
 
 ```json
 {
-  "height": "408997",
-  "result": "43656739809727520024.473279048714163961"
+  "height": "470681",
+  "result": "28940081488938240393.675629801501580608"
 }
 ```
 
@@ -595,10 +662,10 @@ response:
 
 ```json
 {
-  "height": "409030",
+  "height": "470699",
   "result": {
-    "not_bonded_tokens": "9999000000000000000", // staking pool中未质押的token数量
-    "bonded_tokens": "60000000000000000000" // staking pool中总质押的token数量
+    "not_bonded_tokens": "980999999999999",
+    "bonded_tokens": "9771171015775390947"
   }
 }
 ```
@@ -1211,4 +1278,4 @@ response:
 # Res为调用方法的返回值
 ```
 
-其中post_data及payload的生成 ，可以借助dipcli工具，参考[这里](./contract.md##调用智能合约)
+其中post_data及payload的生成 ，可以借助dipcli工具，参考[这里](../vm/vm.md##调用智能合约)

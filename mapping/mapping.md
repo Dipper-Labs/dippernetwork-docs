@@ -1,6 +1,10 @@
-## 如何映射
+---
+order: 1
+---
 
-### 1. 浏览器安装MetaMask
+# 如何映射
+
+## 1. 浏览器安装MetaMask
 MetaMask支持Google Chrome、Firefox浏览器，本文使用Chrome为例。
 
 - 打开Chrome浏览器，输入MetaMask的搜索地址
@@ -18,7 +22,7 @@ https://chrome.google.com/webstore/search/metamask?hl=zh-CN
 - 浏览器会自动完成插件的下载和安装并展示'欢迎使用MetaMask测试版'页面
 
 
-### 2. 导入以太坊账号到MetaMask
+## 2. 导入以太坊账号到MetaMask
 - 在'欢迎使用MetaMask测试版'页面，点击'开始使用'按钮
 ![](../pics/erc20_mapping/4.jpeg)
 
@@ -39,13 +43,13 @@ https://chrome.google.com/webstore/search/metamask?hl=zh-CN
 - 点击'全部完成'后弹出你以太坊的账号详情，核对账号地址和账号余额等信息，确认无误后完成账号导入
 ![](../pics/erc20_mapping/9.jpeg)
 
-### 3. 创建DipperNetwork主网地址
+## 3. 创建DipperNetwork主网地址
 可以通过官方钱包完成也可以通过节点客户端dipcli完成
 
-#### 3.1 官方钱包下载地址(目前只支持安卓，IOS开发测试中): http://fir.highstreet.top/dipperwallet
+### 3.1 官方钱包下载地址(目前只支持安卓，IOS开发测试中): http://fir.highstreet.top/dipperwallet
 安装后根据提示创建账号
 
-#### 3.2 节点客户端dipcli创建账号
+### 3.2 节点客户端dipcli创建账号
 - 如果没有安卓手机可以采用这种方式
 - 需要linux或者Mac osx操作系统，参考文档安装DipperNetwork节点程序
 ```
@@ -75,7 +79,7 @@ address为账号地址
 ```
 
 
-### 4. 授权官方映射合约ERC20
+## 4. 授权官方映射合约ERC20
 - 打开以太坊浏览器: https://etherscan.io/，在以太坊浏览器搜索DIP的ERC20地址: 0x97af10D3fc7C70F67711Bf715d8397C6Da79C1Ab
 ![](../pics/erc20_mapping/10.jpeg)
 
@@ -123,7 +127,7 @@ address为账号地址
 ![](../pics/erc20_mapping/25.jpeg)
 
 
-### 5. 映射
+## 5. 映射
 - 打开以太坊浏览器: https://etherscan.io/，在以太坊浏览器搜索DIP官方的映射合约地址: 0xD14f2f1e32e2Dd4C17DFA27f1393815674e2adA2
 ![](../pics/erc20_mapping/26.jpeg)
 
@@ -146,7 +150,7 @@ address为账号地址
 - 以下图片表示交易成功了，记录交易成功的区块号，等待50个区块确认数
 ![](../pics/erc20_mapping/33.jpeg)
 
-### 6. 查看主网账号到账
+## 6. 查看主网账号到账
 - 打开主网浏览器: https://explorer.dippernetwork.com/，输入步骤5中的dipAddr地址回车查看账号余额
 此时映射还没有完成，账号余额是1.5108DIP
 ![](../pics/erc20_mapping/36.jpeg)
@@ -156,10 +160,3 @@ address为账号地址
 
 - 再次查询主网地址的账号显示余额为1001.5108DIP，增加了1000个DIP，表示映射完成
 ![](../pics/erc20_mapping/38.jpeg)
-
-
-### 7. 映射视频
-- 哔哩哔哩
-```url
-
-```

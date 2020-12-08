@@ -31,4 +31,4 @@ DipperNetwork引入了由基金会控制且具有一定特殊权益的系统用�
 
 3. Profiler提交软件升级
 
-    详细参考[proposal](../advanced/how-to-create-proposal.md)
+    详细参考[proposal](../advanced/proposal.md)
