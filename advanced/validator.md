@@ -9,7 +9,7 @@ DipperNetwork区块链网络需要一组验证人来维护网络的安全。 验
 
 ## 1. 安装并部署全节点
 
-请首先按照[加入主网](mainnet.md)，部署主网全节点，并且确保同步到了最新区块高度。
+请首先按照[加入主网](../get-started/mainnet.md)，部署主网全节点，并且确保同步到了最新区块高度。
 
 ## 2. 设置dipcli环境变量
 
@@ -275,7 +275,7 @@ slash_fraction_double_sign: 1%
 
 ## 更多资源
 
-* 部署节点监控工具，点击[这里](../advanced/monitor.md)
+* 部署节点监控工具，点击[这里](monitor.md)
 * 查看常见问题，点击[这里](../advanced/Q&A.md)
 * 测试网区块浏览器地址： <https://explorer.testnet.dippernetwork.com>
-* 申请测试token，点击[这里](testnet.md#申领测试token)
+* 申请测试token，点击[这里](../get-started/testnet.md#申领测试token)
