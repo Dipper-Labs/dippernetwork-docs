@@ -41,9 +41,9 @@ dipd start
 ```
 
 ## 申领测试token
-将以下链接的<address>替换为你的测试网地址，浏览器访问该地址即可申请测试token
+将以下链接的\<address\>替换为你的测试网地址，浏览器访问该地址即可申请测试token
 ```
-https://faucet.testnet.dippernetwork.com/get_token??<address>
+https://faucet.testnet.dippernetwork.com/get_token?<address>
 ```
 
 ## 测试网相关链接
