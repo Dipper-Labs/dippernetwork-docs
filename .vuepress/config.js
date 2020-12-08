@@ -50,7 +50,7 @@ module.exports = {
         }
     },
     themeConfig: {
-        repo: "cpucorecore/dippernetwork-docs",
+        repo: "Dipper-Labs/dippernetwork-docs",
         docsDir: "/",
         editLinks: true,
         docsBranch: "master",
