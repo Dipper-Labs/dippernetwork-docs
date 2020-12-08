@@ -12,7 +12,7 @@ DipperNetwork 测试网的最新版本是[v4.0.2](https://github.com/Dipper-Labs
 
 ```bash
 git clone -b testnet https://github.com/Dipper-Labs/Dipper-Protocol.git
-cd Dipper-Protocol && git checkout v4.0.1
+cd Dipper-Protocol && git checkout v4.0.2
 make install
 ```
 
