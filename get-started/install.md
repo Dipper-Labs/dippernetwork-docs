@@ -6,7 +6,7 @@ order: 1
 
 ## 最新版本
 
-DipperNetwork 主网的最新版本是[v1.0.1](https://github.com/Dipper-Labs/Dipper-Protocol/releases/tag/mainnet-v1.0.1)
+DipperNetwork 主网的最新版本是[mainnet-v1.0.1](https://github.com/Dipper-Labs/Dipper-Protocol/releases/tag/mainnet-v1.0.1)
 
 ## 服务器配置
 
@@ -20,7 +20,7 @@ DipperNetwork 主网的最新版本是[v1.0.1](https://github.com/Dipper-Labs/Di
 ## 安装`go`
 
 :::tip
-编译安装 DipperNetwork Hub 软件依赖 **Go 1.13+**。
+编译安装 DipperNetwork 软件依赖 **Go 1.13+**。
 :::
 
 按照[官方文档](https://golang.org/doc/install)安装`go`。
@@ -43,9 +43,9 @@ source ~/.bashrc
 go version
 ```
 
-## 安装`DipperNetwork Hub`
+## 安装`DipperNetwork`
 
-正确配置`go`之后，您应该可以编译并运行`DipperNetwork Hub`了。
+正确配置`go`之后，您应该可以编译并运行`DipperNetwork`了。它由dipd，dipcli两个程序构成。
 
 请确保您的服务器可以访问 google.com，因为我们的项目依赖于google提供的某些库（如果您无法访问google.com，也可以尝试添加代理：`export GOPROXY=https://goproxy.io`）
 
@@ -55,7 +55,7 @@ cd Dipper-Protocol && git checkout mainnet-v1.0.1
 make install
 ```
 
-如果环境变量配置无误，则通过运行以上命令即可完成`dipd`的安装。现在检查您的`dipd`版本是否正确：
+如果环境变量配置无误，则通过运行以上命令即可完成`DipperNetwork`的安装。现在检查您的`DipperNetwork`版本是否正确：
 
 ```bash
 dipd version

@@ -33,7 +33,3 @@ dipcli q staking pool --node=<node_url>
 ```
 
 **`/staking/pool`**
-
-这个 restful api 的用法请参阅 LCD swagger 文档。
-
-如何运行一个 LCD 节点，请参阅 [LCD 文档](../light-client/intro.md)。

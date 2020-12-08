@@ -6,7 +6,7 @@ order: 3
 
 ## 最新版本
 
-DipperNetwork 主网的最新版本是[v4.0.1](https://github.com/Dipper-Labs/Dipper-Protocol/releases/tag/testnet-v4.0.1)
+DipperNetwork 测试网的最新版本是[testnet-v4.0.1](https://github.com/Dipper-Labs/Dipper-Protocol/releases/tag/testnet-v4.0.1)
 
 ## 安装
 
@@ -26,6 +26,20 @@ dipcli version
 testnet-v4.0.1-0
 ```
 
+## 运行全节点
+
+```bash
+# 初始化节点
+dipd init --moniker=<your-custom-name> --chain-id=dip-testnet
+
+# 下载主网公开的 config.toml 和 genesis.json
+curl -o ~/.dipd/config/config.toml https://raw.githubusercontent.com/Dipper-Labs/testnet/master/config/config.toml
+curl -o ~/.dipd/config/genesis.json https://raw.githubusercontent.com/Dipper-Labs/testnet/master/config/genesis.json
+
+# 启动节点（也可使用 nohup 或 systemd 等方式后台运行）
+dipd start
+```
+
 ## 申领测试token
 
 ```bash
@@ -39,4 +53,4 @@ curl https://docs.dipperNetwork.com/dip/get_token?<address>
 
 - 区块浏览器：<https://explorer.testnet.dippernetwork.com>
 
-- 水龙头：<>
+- 水龙头：<https://docs.dipperNetwork.com/dip/get_token?your_address>

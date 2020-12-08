@@ -72,7 +72,7 @@ sudo service grafana-server start
 
 Log in o ```http://your_ip:3000/``` with username ```admin``` and password ```admin```, and add DataSource by hitting the ```Login In button``` on the top.
 
-![](../../images/monitor-1.jpg)
+![](../../pics/monitor-1.jpg)
 
 Hit "Save & Test" to finish adding the DataSource.
 
@@ -80,4 +80,4 @@ Hit "Save & Test" to finish adding the DataSource.
 
 Start importing by clicking on the + button at the top of the column on the left. Paste in the JSON from [here](https://github.com/Dipper-Labs/monitor/blob/master/dip_dashboard.json) and load it.
 
-![](../../images/monitor-2.jpg)
+![](../../pics/monitor-2.jpg)

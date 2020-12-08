@@ -1,4 +1,4 @@
-# Staking
+# 抵押
 
 Staking模块提供了一系列查询staking状态和发送staking交易的命令。
 
@@ -19,7 +19,6 @@ Staking模块提供了一系列查询staking状态和发送staking交易的命�
 | [redelegations](#dipcli-query-staking-redelegations)                           | 基于委托者地址的所有转委托记录查询                           |
 | [pool](#dipcli-query-staking-pool)                                             | 查询最新的权益池                                             |
 | [params](#dipcli-query-staking-params)                                         | 查询最新的权益参数信息                                       |
-| [historical-info](#dipcli-query-staking-historical-info)                       | 查询给定高度的历史信息                                       |
 | [create-validator](#dipcli-tx-staking-create-validator)                        | 以自委托的方式创建一个新的验证者                             |
 | [edit-validator](#dipcli-tx-staking-edit-validator)                            | 编辑已存在的验证者信息                                       |
 | [delegate](#dipcli-tx-staking-delegate)                                        | 委托一定代币到某个验证者                                     |
@@ -31,7 +30,7 @@ Staking模块提供了一系列查询staking状态和发送staking交易的命�
 ### 通过地址查询验证人
 
 ```bash
-dipcli query staking validator <iva...>
+dipcli query staking validator <dipvaloper...>
 ```
 
 ## dipcli query staking validators
@@ -53,7 +52,7 @@ dipcli query staking delegation [delegator-addr] [validator-addr]
 ### 查询委托交易
 
 ```bash
-dipcli query staking delegation <iaa...> <iva...>
+dipcli query staking delegation <dip...> <dipvaloper...>
 ```
 
 示例输出:
@@ -81,7 +80,7 @@ dipcli query staking delegations [delegator-address] [flags]
 ### 查询某个委托人发起的所有委托记录
 
 ```bash
-dipcli query staking delegations <iaa...>
+dipcli query staking delegations <dip...>
 ```
 
 ## dipcli query staking delegations-to
@@ -95,7 +94,7 @@ dipcli query staking delegations-to [validator-address] [flags]
 ### 查询某个验证人接受的所有委托
 
 ```bash
-dipcli query staking delegations-to <iva...>
+dipcli query staking delegations-to <dipvaloper...>
 ```
 
 示例输出:
@@ -151,7 +150,7 @@ dipcli query staking unbonding-delegation [delegator-addr] [validator-addr] [fla
 ### 查询委托人的所有未绑定委托记录
 
 ```bash
-dipcli query staking unbonding-delegations <iaa...>
+dipcli query staking unbonding-delegations <dip...>
 ```
 
 ## dipcli query staking unbonding-delegations-from
@@ -159,7 +158,7 @@ dipcli query staking unbonding-delegations <iaa...>
 ### 查询验证人的所有未绑定委托记录
 
 ```bash
-dipcli query staking unbonding-delegations-from <iva...>
+dipcli query staking unbonding-delegations-from <dipvaloper...>
 ```
 
 ## dipcli query staking redelegations-from
@@ -173,7 +172,7 @@ dipcli query staking redelegations-from [validator-address] [flags]
 ### 查询验证人的所有转委托记录
 
 ```bash
-dipcli query staking redelegations-from <iva...>
+dipcli query staking redelegations-from <dipvaloper...>
 ```
 
 ## dipcli query staking redelegation
@@ -187,7 +186,7 @@ dipcli query staking redelegation [delegator-addr] [src-validator-addr] [dst-val
 ### 查询转委托记录
 
 ```bash
-dipcli query staking redelegation <iaa...> <iva...> <iva...>
+dipcli query staking redelegation <dip...> <dipvaloper...> <dipvaloper...>
 ```
 
 ## dipcli query staking redelegations
@@ -195,7 +194,7 @@ dipcli query staking redelegation <iaa...> <iva...> <iva...>
 ### 查询委托人的所有转委托记录
 
 ```bash
-dipcli query staking redelegations <iaa...>
+dipcli query staking redelegations <dip...>
 ```
 
 ## dipcli query staking pool
@@ -296,7 +295,7 @@ dipcli tx staking delegate [validator-addr] [amount] [flags]
 ```
 
 ```bash
-dipcli tx staking delegate <iva...> <amount> --chain-id=dipperhub --from=<key-name>
+dipcli tx staking delegate <dipvaloper...> <amount> --chain-id=dipperhub --from=<key-name>
 ```
 
 ## dipcli tx staking unbond
@@ -310,7 +309,7 @@ dipcli tx staking unbond [validator-addr] [amount] [flags]
 ### 从验证人中解委托一定数量的代币
 
 ```bash
-dipcli tx staking unbond <iva...> 10pdip --from=<key-name> --chain-id=dipperhub
+dipcli tx staking unbond <dipvaloper...> 10pdip --from=<key-name> --chain-id=dipperhub
 ```
 
 ## dipcli tx staking redelegate
@@ -328,6 +327,6 @@ dipcli tx staking redelegate [src-validator-addr] [dst-validator-addr] [amount] 
 ### 转委托一定数量代币到其他验证人
 
 ```bash
-dipcli tx staking redelegate <iva...> <iva...> 10pdip --chain-id=dipperhub --from=<key-name>
-dipcli tx staking redelegate <iva...> <iva...> 10pdip --chain-id=dipperhub --from=<key-name>
+dipcli tx staking redelegate <dipvaloper...> <dipvaloper...> 10pdip --chain-id=dipperhub --from=<key-name>
+dipcli tx staking redelegate <dipvaloper...> <dipvaloper...> 10pdip --chain-id=dipperhub --from=<key-name>
 ```

@@ -29,7 +29,7 @@ dipd init testing --chain-id=testing
 创建一个钱包作为您的验证人帐户
 
 ```bash
-dipd keys add MyValidator
+dipcli keys add MyValidator
 ```
 
 ### dipd add-genesis-account

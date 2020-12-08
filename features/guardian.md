@@ -18,10 +18,10 @@ DipperNetwork引入了由基金会控制且具有一定特殊权益的系统用�
     添加profiler （仅限Genesis Profiler）
 
     ```bash
-    dipd add-genesis-guardian --address=<profiler-address> --description=<profiler-description> --chain-id=dipperhub --from=<key-name> --fees=0.3iris
+    dipd add-genesis-guardian --address=<profiler-address> --description=<profiler-description> --chain-id=dipperhub --from=<key-name>
     ```
 
-2. 查询profiler和trustee列表
+2. 查询profiler
 
     查询profiler列表
 
@@ -29,6 +29,6 @@ DipperNetwork引入了由基金会控制且具有一定特殊权益的系统用�
     dipcli q guardian profilers
     ```
 
-3. Profiler提交软件升级/停止提议
+3. Profiler提交软件升级
 
-    详细参考[upgrade](upgrade.md)
+    详细参考[proposal](../advanced/how-to-create-proposal.md)

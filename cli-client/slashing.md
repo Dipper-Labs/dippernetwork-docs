@@ -1,4 +1,4 @@
-# Slashing
+# 惩罚
 
 Slashing 模块可以解禁被监禁的验证人
 

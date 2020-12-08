@@ -2,83 +2,16 @@
 
 本教程包含智能合约相关的操作，需要你先在本地跑一个测试网节点或者私链。
 
-配置相关的开发环境和依赖，参考[这里](../software/how-to-install.md)。
+## 加入测试网
+参考[加入测试网](../get-started/testnet.md)
 
-## 源码编译
-
-```bash
-git clone https://github.com/Dipper-Labs/Dipper-Protocol.git
-cd Dipper-Protocol && git checkout testnet-v4.0.1
-
-make install
-```
-
-## 初始化本地私链
-
-### 初始化
+## 配置命令行钱包dipcli
 
 ```bash
-# usage:
-dipd init <local-node-name> --chain-id <chain-id>
-
-```
-
-:::warning
-如果执行```dipd init```出错，说明之前跑过dipd程序，可先备份一下之前的数据，然后重新初始化本地私链
-```mv ~/.dipd ~/.dipd.bakup```
-:::
-
-### 创建钱包地址
-
-```bash
-# Copy the `Address` output here and save it for later use 
-dipcli keys add jack
-
-# Copy the `Address` output here and save it for later use
-dipcli keys add alice
-```
-
-### 将钱包地址加入genesis文件，并初始化余额
-
-```bash
-# Add both accounts, with coins to the genesis file
-dipd add-genesis-account $(dipcli keys show jack -a) 100000000000000000000pdip
-dipd add-genesis-account $(dipcli keys show alice -a) 100000000000000000000pdip
-```
-
-### 创建验证人
-
-```bash
-# create validator
-dipd gentx \
-  --amount 1000000000000pdip \
-  --commission-rate "0.10" \
-  --commission-max-rate "0.20" \
-  --commission-max-change-rate "0.10" \
-  --pubkey $(dipd tendermint show-validator) \
-  --name alice
-
-
-# collect gentx
-dipd collect-gentxs
-```
-
-### 配置命令行钱包dipcli
-
-```bash
-# Configure your CLI to eliminate need for chain-id flag
-dipcli config chain-id <chain-id>
+dipcli config chain-id dip-testnet
 dipcli config output json
 dipcli config indent true
 dipcli config trust-node true
-```
-
-### 启动本地私链
-
-完成以上配置后，执行如下命令，启动本地私链
-
-```bash
-dipd start --log_level "*:debug" --trace
 ```
 
 ## 创建智能合约
@@ -88,7 +21,7 @@ dipd start --log_level "*:debug" --trace
 智能合约支持solidity语言。
 以下面的合约为示例：
 
-```javascript
+```solidity
 pragma solidity ^0.4.16;
 contract token {
     mapping (address => uint256) public balances;
@@ -118,13 +51,13 @@ contract token {
 
 字节码:
 
-```javascript
+```hex
 608060405234801561001057600080fd5b506509184e72a0006000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550610344806100696000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806327e235e31461005c57806370a08231146100b3578063a9059cbb1461010a575b600080fd5b34801561006857600080fd5b5061009d600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610162565b6040518082815260200191505060405180910390f35b3480156100bf57600080fd5b506100f4600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061017a565b6040518082815260200191505060405180910390f35b610148600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291905050506101c2565b604051808215151515815260200191505060405180910390f35b60006020528060005260406000206000915090505481565b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b6000816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020541015151561021157600080fd5b816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540392505081905550816000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a360019050929150505600a165627a7a7230582015481e18f5439ee76271037928d88d33cc7d7d4bf1e5e801b78db9e902f255560029
 ```
 
 abi:
 
-```javascript
+```json
 [
 	{
 		"constant": true,
@@ -218,7 +151,6 @@ abi:
 ]
 ```
 
-
 ### 部署智能合约
 
 ```bash
@@ -308,7 +240,7 @@ dipcli vm call --from $(dipcli keys show -a alice) \
 
 上述示例调用了合约的```transfer```方法，该方法的声明如下
 
-```javascript
+```solidity
 function transfer(address to, uint256 value) public returns (bool success)
 ```
 

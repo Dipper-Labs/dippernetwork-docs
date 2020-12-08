@@ -4,7 +4,7 @@ DipperNetwork在底层上原生支持第三方交易费用代付。本文介绍�
 
 ## 流程
 
-![流程图](../images/fee_payment.png)
+![流程图](../pics/fee_payment.png)
 
 交易费用代付的原理，主要是基于：当一笔交易消息体中包含多个signatures时，DipperNetwork区块链网络将按交易签名顺序，选择排第一位的收取交易费用。关于交易结构，参考[这里](./transaction.md)。
 

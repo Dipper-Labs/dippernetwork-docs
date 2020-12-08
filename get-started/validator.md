@@ -9,7 +9,7 @@ DipperNetwork区块链网络需要一组验证人来维护网络的安全。 验
 
 ## 1. 安装并部署全节点
 
-请首先按照[教程](./how-to-join-mainnet.md)，部署主网全节点，并且确保同步到了最新区块高度。
+请首先按照[加入主网](mainnet.md)，部署主网全节点，并且确保同步到了最新区块高度。
 
 ## 2. 设置dipcli环境变量
 
@@ -135,7 +135,7 @@ step5创建了验证人，此时其状态为0，0表示还没有绑定，因为�
 1000000000000pdip为1个voting power，voting power的最小单位为1，只有它>=1时候才能够变成绑定状态2，才能成为活跃验证者出块，因此至少还需要抵押990000000000pdip
 
 可以用自己的账号给自己抵押，也可以让别的账号给自己的验证者抵押
-如何用别的账号为自己抵押，[点击这里](../software/dipcli.md)
+如何用别的账号为自己抵押，[如何抵押](../cli-client/staking.md#dipcli-tx-staking-delegate)
 
 这里需要用到步骤4中jackson账号对应的验证人地址operator_address: dipvaloper18q4pv9qvmqx7dcd2jq3dl3d0755urk8300709e
 
@@ -275,7 +275,7 @@ slash_fraction_double_sign: 1%
 
 ## 更多资源
 
-* 部署节点监控工具，点击[这里](../software/monitor.md)
+* 部署节点监控工具，点击[这里](../advanced/monitor.md)
 * 查看常见问题，点击[这里](../advanced/Q&A.md)
-* 测试区块浏览器地址： <https://explorer.dippernetwork.com>
-* 申请测试token，点击[这里](testcoin.md)
+* 测试网区块浏览器地址： <https://explorer.testnet.dippernetwork.com>
+* 申请测试token，点击[这里](testnet.md#申领测试token)

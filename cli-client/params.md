@@ -1,9 +1,9 @@
-# Params
+# 链上参数
 
 Params模块允许查询系统里预设的参数，查询结果中除了Gov模块的参数，其他都可以通过[Gov模块](./gov.md)发起提议来修改。
 
 ```bash
-dipcli query [subspace] [flags]
+dipcli query [subspace] params
 ```
 
 `subspace`目前支持：`auth`，`staking`，`mint`，`distribution`，`slashing`，`gov`，`vm`。

@@ -1,4 +1,4 @@
-# Tx
+# 发送交易
 
 签名、广播、查询交易
 
@@ -164,7 +164,7 @@ dipcli tx bank send <from> <to> 10pdip --chain-id=dipperhub --from=<multisig-key
 #### 查询多签地址
 
 ```bash
-iris keys show <multisig-keyname>
+dipcli keys show <multisig-keyname>
 ```
 
 #### 签名`unsigned.json`
@@ -196,13 +196,13 @@ dipcli tx multisign --chain-id=dipperhub unsigned.json <multisig-keyname> signed
 ## dipcli query tx
 
 ```bash
-iris query tx [hash] [flags]
+dipcli query tx [hash] [flags]
 ```
 
 ## dipcli query txs
 
 ```bash
-dipcli query txs --events 'message.sender=<iaa...>&message.action=xxxx' --page 1 --limit 30
+dipcli query txs --events 'message.sender=<dip...>&message.action=xxxx' --page 1 --limit 30
 ```
 
 其中`message.action`可取值：

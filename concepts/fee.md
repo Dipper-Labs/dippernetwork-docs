@@ -35,5 +35,5 @@ Gas价格 = 交易费 / Gas上限，代表用户为每个单位的资源消耗�
 示例：
 
 ```bash
-iris send --from <from_address> --to <to_address> --amount 1pdip --gas=100000 --chain-id=irishub --from=<key-name>
+dipcli send --from <from_address> --to <to_address> --amount 1pdip --gas=100000 --chain-id=dipperhub --from=<key-name>
 ```

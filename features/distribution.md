@@ -41,13 +41,13 @@ dipcli tx distribution set-withdraw-addr [withdraw-addr] [flags]
 1.`withdraw-all-rewards` : 提取所有在外的委托收益）。
 
 ```bash
-dipcli tx distribution withdraw-all-rewards [flags] --from=<key-name> --fees=0.3iris --chain-id=irishub
+dipcli tx distribution withdraw-all-rewards [flags] --from=<key-name> --chain-id=dipperhub
 ```
 
 2.`withdraw-rewards` ：从指定验证人处提取委托收益。
 
 ```bash
-dipcli tx distribution withdraw-rewards [validator-addr] [flags] --from=<key-name> --fees=0.3iris --chain-id=irishub
+dipcli tx distribution withdraw-rewards [validator-addr] [flags] --from=<key-name> --chain-id=dipperhub
 ```
 
 ### 查询收益
@@ -55,7 +55,7 @@ dipcli tx distribution withdraw-rewards [validator-addr] [flags] --from=<key-nam
 查询委托人获得的所有奖励，可以选择为来自单个验证者的奖励。
 
 ```bash
-iris query distribution rewards [delegator-addr] [validator-addr] [flags]
+dipcli query distribution rewards [delegator-addr] [validator-addr] [flags]
 ```
 
 对于其它distribution相关的命令，请参考[stake-cli](../cli-client/distribution.md)

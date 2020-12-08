@@ -110,19 +110,19 @@ dipcli tx staking edit-validator --from=<key-name> --chain-id=dipperhub  --commi
 - 委托
 
 ```bash
-iris tx staking delegate dipvaloper1cul6enyty8v0nwlgq8khfa5jme5n23gph7cr3g 1000pdip --chain-id=dipperhub --from=<key-name> 
+dipcli tx staking delegate dipvaloper1cul6enyty8v0nwlgq8khfa5jme5n23gph7cr3g 1000pdip --chain-id=dipperhub --from=<key-name> 
 ```
 
 - 解绑
 
 ```bash
-iris tx staking unbond dipvaloper1cul6enyty8v0nwlgq8khfa5jme5n23gph7cr3g 1000pdip --chain-id=dipperhub --from=<key-name> 
+dipcli tx staking unbond dipvaloper1cul6enyty8v0nwlgq8khfa5jme5n23gph7cr3g 1000pdip --chain-id=dipperhub --from=<key-name> 
 ```
 
 - 转委托
 
 ```bash
-iris tx staking redelegate dipvaloper1cul6enyty8v0nwlgq8khfa5jme5n23gph7cr3g dipvaloper1a6j9yw0ke2c5cl7l5ydwx9ywzrtxrv8n525sye 100pdip --from mykey --chain-id=dipperhub --from=<key-name> 
+dipcli tx staking redelegate dipvaloper1cul6enyty8v0nwlgq8khfa5jme5n23gph7cr3g dipvaloper1a6j9yw0ke2c5cl7l5ydwx9ywzrtxrv8n525sye 100pdip --from mykey --chain-id=dipperhub --from=<key-name> 
 ```
 
 对于其它Staking相关的命令，请参考[stake-cli](../cli-client/staking.md)

@@ -1,4 +1,4 @@
-# Keys
+# 密钥管理
 
 Keys模块用于管理DipperNetwork的Tendermint本地密钥库（钱包）。
 
@@ -171,7 +171,7 @@ dipcli keys mnemonic
 执行上述命令后你将得到24个单词组成的助记词，例如：
 
 ```bash
-beauty entire blue tape ordinary fix rotate learn smart tiger dolphin cycle cigar dish alcohol slab bachelor vital design consider paper panther mad eternal
+habit video edit valid student screen ship present advance visit cage inject away mirror wrestle speak purchase relief next soda about what width rare
 ```
 
 ## dipcli keys parse

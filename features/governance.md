@@ -108,10 +108,10 @@ Threshold is defined as the minimum proportion of `Yes` votes (excluding `Abstai
 
 阈值初始被设置为 50%，如果超过 1/3 的投票（排除 `弃权` 投票）是 `否决` 票，有一定的否决概率。这意味着在投票期结束时，如果 `赞成` 投票（排除 `弃权` 投票）的比例大于 50%，并且 `否决` 投票（排除 `弃权` 投票）的比例小于 1/3，则提议将被接受。
 
-Proposals can be accepted before the end of the voting period if they meet a special condition. Namely, if the ratio of `Yes` votes to `InitTotalVotingPower`exceeds 2:3, the proposal will be immediately accepted, even if the `Voting period` is not finished. `InitTotalVotingPower` is the total voting power of all bonded Iris holders at the moment when the vote opens.
+Proposals can be accepted before the end of the voting period if they meet a special condition. Namely, if the ratio of `Yes` votes to `InitTotalVotingPower`exceeds 2:3, the proposal will be immediately accepted, even if the `Voting period` is not finished. `InitTotalVotingPower` is the total voting power of all bonded DIP holders at the moment when the vote opens.
 This condition exists so that the network can react quickly in case of urgency.
 
-在投票期结束之前，如果满足一个特殊条件，提议可以被接受。即，如果 `赞成` 投票与 `InitTotalVotingPower`（`初始总投票权`）的比例超过 2:3，提议将立即被接受，即使 `投票期` 还没结束。`初始总投票权` 是投票开启时所有质押的 Iris 持有人的总投票权。这个条件存在以至于在紧急情况下网络可以快速做出反应。
+在投票期结束之前，如果满足一个特殊条件，提议可以被接受。即，如果 `赞成` 投票与 `InitTotalVotingPower`（`初始总投票权`）的比例超过 2:3，提议将立即被接受，即使 `投票期` 还没结束。`初始总投票权` 是投票开启时所有质押的 DIP 持有人的总投票权。这个条件存在以至于在紧急情况下网络可以快速做出反应。
 
 #### 继承
 
@@ -153,9 +153,5 @@ echo '{
   "deposit": "1000pdip"
 }' > proposal.json
 
-iris tx gov submit-proposal community-pool-spend proposal.json --from=<key-name> --fees=0.3iris --chain-id=irishub
+dipcli tx gov submit-proposal community-pool-spend proposal.json --from=<key-name> --chain-id=dipperhub
 ```
-
-### 软件升级
-
-软件升级的用法请参考 [`Upgrade`](upgrade.md)

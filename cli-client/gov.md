@@ -1,4 +1,4 @@
-# Gov
+# 治理
 
 此模块提供[治理](../../features/governance.md)的基本功能
 
@@ -59,7 +59,7 @@ dipcli query gov proposals
 ### 按条件查询提案
 
 ```bash
-dipcli query gov proposals --limit=3 --status=Passed --depositor=<iaa...>
+dipcli query gov proposals --limit=3 --status=Passed --depositor=<dip...>
 ```
 
 ## dipcli query gov vote
@@ -73,7 +73,7 @@ dipcli query gov vote [proposal-id] [voter-addr] [flags]
 ### 查询单个投票的信息
 
 ```bash
-dipcli query gov vote <proposal-id> <iaa...>
+dipcli query gov vote <proposal-id> <dip...>
 ```
 
 ## dipcli query gov votes
@@ -101,7 +101,7 @@ dipcli query gov deposit [proposal-id] [depositer-addr] [flags]
 ### 查询单个抵押信息
 
 ```bash
-dipcli query gov deposit <proposal-id> <iaa...>
+dipcli query gov deposit <proposal-id> <dip...>
 ```
 
 ## dipcli query gov deposits

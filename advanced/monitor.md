@@ -12,7 +12,7 @@ prometheus = true
 prometheus_listen_addr = ":26660"
 ```
 
-修改配置文件后，重启```dipd```即生效。 如何重启节点，点击[这里](../advanced/Q&A.md#如何重启节点程序)。
+修改配置文件后，重启```dipd```即生效。 如何重启节点，点击[这里](Q&A.md#如何重启节点程序)。
 
 ## 2. 安装 Prometheus 和 Grafana
 
@@ -74,10 +74,10 @@ sudo service grafana-server start
 
 添加Data Source 如下图，点击```Save & Test``` 完成添加。
 
-![](../images/monitor-1.jpg)
+![](../pics/monitor-1.jpg)
 
 * 添加仪表盘
 
 点击左上侧的"+"按键并选择"import“，打开import页面，将[此处](https://github.com/Dipper-Labs/monitor/blob/master/dip_dashboard.json)的json文件粘贴到对话框，并点击"Load"，完成仪表盘添加。
 
-![](../images/monitor-2.jpg)
+![](../pics/monitor-2.jpg)

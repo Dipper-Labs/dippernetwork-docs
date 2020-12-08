@@ -10,12 +10,12 @@ Bech32是由Pieter Wuille和Greg Maxwel提出的新比特币地址格式。除�
 
 | HRP | Definition                              |
 | --- | :-------------------------------------- |
-| dip | DipperNetwork Account Address                 |
-| dippub | DipperNetwork Account Public Key              |
-| dipvaloper | DipperNetwork Validator's Operator Address    |
+| dip | DipperNetwork Account Address           |
+| dippub | DipperNetwork Account Public Key     |
+| dipvaloper | DipperNetwork Validator's Operator Address       |
 | dipvaloperpub | DipperNetwork Validator's Operator Public Key |
-| dipvalcons | Tendermint Consensus Address            |
-| dipvalconspub | Tendermint Consensus Public Key         |
+| dipvalcons | Tendermint Consensus Address                     |
+| dipvalconspub | Tendermint Consensus Public Key               |
 
 ## 编码
 

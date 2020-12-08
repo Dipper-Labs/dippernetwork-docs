@@ -38,11 +38,11 @@ module.exports = {
         }]
     ],
     locales: {
-        "/en": {
-            lang: "en-US",
-            title: "dipvaloper1cul6enyty8v0nwlgq8khfa5jme5n23gph7cr3g Documents",
-            description: "DipperNetwork Documents",
-        },
+        // "/en": {
+        //     lang: "en-US",
+        //     title: "DipperNetwork Documents",
+        //     description: "DipperNetwork Documents",
+        // },
         "/": {
             lang: "简体中文",
             title: "DipperNetwork 文档",

@@ -1,6 +1,6 @@
 # Welcome to the DipperNetwork Documents
 
-![DippperNetwork](./pics/hero.png)
+![DippperNetwork](./pics/dipper.jpeg)
 
 ## About DipperNetwork
 
