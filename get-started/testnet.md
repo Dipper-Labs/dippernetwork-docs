@@ -41,11 +41,10 @@ dipd start
 ```
 
 ## 申领测试token
-
-```bash
-# 将下面命令的<address>替换为你的测试网地址
-curl https://docs.dipperNetwork.com/dip/get_token?<address>
-```  
+将以下链接的<address>替换为你的测试网地址，浏览器访问该地址即可申请测试token
+```
+https://docs.dipperNetwork.com/dip/get_token?<address>
+```
 
 ## 测试网相关链接
 
