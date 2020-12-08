@@ -43,7 +43,7 @@ dipd start
 ## 申领测试token
 将以下链接的<address>替换为你的测试网地址，浏览器访问该地址即可申请测试token
 ```
-https://docs.dipperNetwork.com/dip/get_token?<address>
+https://faucet.testnet.dippernetwork.com/get_token??<address>
 ```
 
 ## 测试网相关链接
@@ -52,4 +52,4 @@ https://docs.dipperNetwork.com/dip/get_token?<address>
 
 - 区块浏览器：<https://explorer.testnet.dippernetwork.com>
 
-- 水龙头：<https://docs.dipperNetwork.com/dip/get_token?your_address>
+- 水龙头：<https://faucet.testnet.dippernetwork.com/get_token?your_address>
