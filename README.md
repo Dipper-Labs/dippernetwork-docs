@@ -1,6 +1,6 @@
 # Welcome to the DipperNetwork Documents
 
-![DippperNetwork](./pics/dipper.jpeg)
+![DippperNetwork](./pics/dipper.png)
 
 ## About DipperNetwork
 

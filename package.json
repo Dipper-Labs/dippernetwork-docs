@@ -17,6 +17,9 @@
     "vuepress": "^1.4.0"
   },
   "dependencies": {
-    "axios": "^0.19.0"
+    "archiver": "^5.1.0",
+    "axios": "^0.19.0",
+    "ora": "^5.1.0",
+    "rm": "^0.1.8"
   }
 }

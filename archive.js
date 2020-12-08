@@ -5,8 +5,6 @@ var archiveFilePath = path.join(__dirname, 'dipper-docs.zip');
 var archive = archiver('zip');
 var ora = require('ora');
 
-rm('-rf', archiveFilePath);
-
 var spinner = ora('archiving...');
 spinner.start();
 
@@ -23,5 +21,5 @@ archive.on('error', function (err) {
 });
 
 archive.pipe(output);
-archive.directory('docs/.vuepress/dist', './dipper-docs', {date: new Date()});
+archive.directory('.vuepress/dist', './dipper-docs', {date: new Date()});
 archive.finalize();
