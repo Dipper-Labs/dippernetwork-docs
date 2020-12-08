@@ -6,13 +6,13 @@ order: 3
 
 ## 最新版本
 
-DipperNetwork 测试网的最新版本是[testnet-v4.0.1](https://github.com/Dipper-Labs/Dipper-Protocol/releases/tag/testnet-v4.0.1)
+DipperNetwork 测试网的最新版本是[v4.0.2](https://github.com/Dipper-Labs/Dipper-Protocol/releases/tag/v4.0.2)
 
 ## 安装
 
 ```bash
 git clone -b testnet https://github.com/Dipper-Labs/Dipper-Protocol.git
-cd Dipper-Protocol && git checkout testnet-v4.0.1
+cd Dipper-Protocol && git checkout v4.0.1
 make install
 ```
 
@@ -20,10 +20,10 @@ make install
 
 ```bash
 dipd version
-testnet-v4.0.1-0
+4.0.2-0
 
 dipcli version
-testnet-v4.0.1-0
+4.0.2-0
 ```
 
 ## 运行全节点

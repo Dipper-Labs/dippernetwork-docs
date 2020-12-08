@@ -6,7 +6,7 @@ order: 1
 
 ## 最新版本
 
-DipperNetwork 主网的最新版本是[mainnet-v1.0.1](https://github.com/Dipper-Labs/Dipper-Protocol/releases/tag/mainnet-v1.0.1)
+DipperNetwork 主网的最新版本是[v1.0.2](https://github.com/Dipper-Labs/Dipper-Protocol/releases/tag/v1.0.2)
 
 ## 服务器配置
 
@@ -51,7 +51,7 @@ go version
 
 ```bash
 git clone https://github.com/Dipper-Labs/Dipper-Protocol.git
-cd Dipper-Protocol && git checkout mainnet-v1.0.1
+cd Dipper-Protocol && git checkout v1.0.2
 make install
 ```
 
@@ -59,5 +59,8 @@ make install
 
 ```bash
 dipd version
+1.0.2-0
+
 dipcli version
+1.0.2-0
 ```
