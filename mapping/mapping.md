@@ -46,14 +46,15 @@ https://chrome.google.com/webstore/search/metamask?hl=zh-CN
 ## 3. 创建DipperNetwork主网地址
 可以通过官方钱包完成也可以通过节点客户端dipcli完成
 
-### 3.1 官方钱包下载地址(目前只支持安卓，IOS开发测试中): http://fir.highstreet.top/dipperwallet
-安装后根据提示创建账号
+### 3.1 官方钱包
+- 安卓: http://fir.highstreet.top/dipperwallet
+- IOS: 先安装testfligth，再打开链接：https://testflight.apple.com/join/80C8CMsO
+- 安装后根据提示创建账号
 
 ### 3.2 节点客户端dipcli创建账号
-- 如果没有安卓手机可以采用这种方式
 - 需要linux或者Mac osx操作系统，参考文档安装DipperNetwork节点程序
 ```
-https://docs.dippernetwork.com/software/how-to-install.html#%E5%AE%89%E8%A3%85%E4%B8%BB%E7%BD%91
+https://docs.dippernetwork.com/get-started/install.html
 ```
 
 - 安装完毕后执行创建账号
