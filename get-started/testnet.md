@@ -30,7 +30,7 @@ dipcli version
 
 ```bash
 # 初始化节点
-dipd init --moniker=<your-custom-name> --chain-id=dip-testnet
+dipd init <your-custom-name> --chain-id=dip-testnet
 
 # 下载主网公开的 config.toml 和 genesis.json
 curl -o ~/.dipd/config/config.toml https://raw.githubusercontent.com/Dipper-Labs/testnet/master/config/config.toml

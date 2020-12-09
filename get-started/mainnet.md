@@ -12,7 +12,7 @@ order: 2
 
 ```bash
 # 初始化节点
-dipd init --moniker=<your-custom-name> --chain-id=dipperhub
+dipd init <your-custom-name> --chain-id=dipperhub
 
 # 下载主网公开的 config.toml 和 genesis.json
 curl -o ~/.dipd/config/config.toml https://raw.githubusercontent.com/Dipper-Labs/mainnet/master/config/config.toml
