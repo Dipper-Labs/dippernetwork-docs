@@ -57,14 +57,37 @@ dipcli status | jq .sync_info.catching_up
 
 ```bash
 dipcli tx staking create-validator \
-    --pubkey=$(dipcli tendermint show-validator) \
-    --moniker=<your-validator-name> \
-    --amount=<amount-to-be-delegated, e.g. 1000000000000pdip> \
-    --commission-rate=0.1 \
-    --gas=200000 \
-    --chain-id=dipperhub \
-    --from=<key-name>
+  --amount=1000000000000pdip \
+  --pubkey=$(dipd tendermint show-validator -o text) \
+  --moniker=<validator_name> \
+  --commission-rate="0.10" \
+  --commission-max-rate="0.20" \
+  --commission-max-change-rate="0.01" \
+  --min-self-delegation="1000000000000" \
+  --from=$(dipcli keys show -a <key_name>) \
+  --ip=<node_public_ip> \
+  --node-id=<node ID> \
+  --website=<validator website> \
+  --details=<validator details> \
+  --gas=200000
 ```
+
+```--moniker```：验证人节点名称
+
+```--amount```：初始抵押token数量, 其中 ```1 dip = 1000 000 000 000 pdip```， 1 dip为 1个投票权(voting power)，抵押token数量至少需要 1 dip才能参与共识
+
+```--commission-rate```：佣金提成的百分比，0.1即为10%。当别的用户委托DIP给验证人时，该委托部分所得奖励的10%归验证人所有
+
+```--commission-max-rate```：佣金提成的上限
+
+```commission-max-change-rate```：每次调整佣金百分比时的上限，比如，1%到2%，增长率100%，但反映到commission-rate上只有1个百分点
+
+```--website```：验证人网站地址(可选)
+
+```--details``` ：验证人详情描述(可选)
+
+其中```--node-id```和```--ip```是可选参数， ```ip```是节点的外网ip地址，```node-id``` 可以通过命令行```dipd tendermint show-node-id```获得。 此2个参数，可公开一个可用的seed节点。
+
 
 :::warning
 **重要**
