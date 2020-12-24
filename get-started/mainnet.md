@@ -69,7 +69,8 @@ dipcli tx staking create-validator \
   --node-id=<node ID> \
   --website=<validator website> \
   --details=<validator details> \
-  --gas=200000
+  --gas=200000 \
+  --chain-id=dipperhub
 ```
 
 ```--moniker```：验证人节点名称
